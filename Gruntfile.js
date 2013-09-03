@@ -309,6 +309,18 @@ module.exports = function (grunt) {
                         }
                         return path.join(dest, src);
                     }
+                },
+                {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '<%= yeoman.dist %>',
+                    src: [
+                        '*.{ico,png,txt}',
+                        '.htaccess',
+                        'images/{,*/}*.{webp,gif}',
+                        'styles/fonts/{,*/}*.*'
+                    ]
                 }]
             },
             // dist: {
