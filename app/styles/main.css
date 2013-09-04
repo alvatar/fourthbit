@@ -47,11 +47,11 @@ a:hover {
   text-align: center;
 }
 
-/* @media only screen and (max-device-height : 600px) {
+@media only screen and (max-device-height : 500px) {
   .fourthbit-logo {
-    padding: 150px 0 0 0;
+    padding: 22px 0 0 0;
   }
-} */
+}
 
 .slogan {
   margin: 0 auto 0 auto;
@@ -69,12 +69,6 @@ a:hover {
   font-weight: 600;
   font-size: 30px;
 }
-
-/* @media only screen and (max-device-height : 600px) {
-  .slogan h1 {
-    padding: 140px 0 80px 0;
-  }
-} */
 
 .social {
   margin: 0 auto 0 auto;
@@ -178,10 +172,12 @@ a:hover {
 }
 
 .listing ul {
+  margin: 0 auto 0 auto;
   text-align: center;
   background-color: #0b0f11;
   list-style-type: none;
   padding: 0 0 0 0;
+  width: 600px;
 
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
@@ -194,6 +190,7 @@ a:hover {
 
 .footer {
   margin: 180px auto 0 auto;
+  width: 600px;
 }
 
 .footer p {
