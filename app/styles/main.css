@@ -47,7 +47,7 @@ a:hover {
   text-align: center;
 }
 
-@media only screen and (max-device-height : 500px) {
+@media only screen and (max-device-height : 680px) {
   .fourthbit-logo {
     padding: 22px 0 0 0;
   }
