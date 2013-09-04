@@ -194,6 +194,8 @@ a:hover {
 }
 
 .footer p {
+  width: 600px;
+
   font-family: 'Josefin Sans', sans-serif;
   font-weight: normal;
   font-size: 14px;
