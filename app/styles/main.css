@@ -31,6 +31,7 @@ a:hover {
   color: #ff6600;
   font-weight: 300;
 }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -68,6 +69,10 @@ a:hover {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   font-size: 30px;
+}
+
+.slogan h1 > a {
+  font-weight: 600;
 }
 
 .social {
@@ -129,8 +134,12 @@ a:hover {
   color: #ff6600;
 }
 
+#begin-portfolio {
+  height: 30px;
+}
+
 .swirly {
-  margin: 90px auto 120px auto;
+  margin: 0 auto 120px auto;
   width: 600px;
 
   background-color: #0b0f11;
