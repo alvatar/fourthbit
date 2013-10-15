@@ -63,8 +63,7 @@ a:hover {
 }
 
 .slogan h1 {
-  margin: 0 0 0 0;
-  padding: 180px 0 100px 0;
+  margin: 30px 0 0 0;
 
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
@@ -73,6 +72,66 @@ a:hover {
 
 .slogan h1 > a {
   font-weight: 600;
+}
+
+.circles-wrapper {
+  margin: 200px auto 150px auto;
+  width: 900px;
+  height: 300px;
+}
+
+.circles { 
+  margin: 0 auto 0 auto;
+  width: 300px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+
+  background-color: #0b0f11;
+  text-align: center;
+}
+
+.circles > .text-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.circles h2 {
+  font-family: 'Tangerine', cursive;
+  font-weight: normal;
+  font-size: 45px;
+
+  padding: 16px 0 0 0;
+}
+
+.listing { 
+  margin: 0 auto 0 auto;
+  width: 600px;
+  display: none;
+
+  background-color: #fb0f11;
+  text-align: center;
+}
+
+.listing ul {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  background-color: #0b0f11;
+  list-style-type: none;
+  padding: 0 0 0 0;
+  width: 600px;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.listing ul a {
+  font-weight: 700;
 }
 
 .social {
@@ -144,57 +203,6 @@ a:hover {
 
   background-color: #0b0f11;
   text-align: center;
-}
-
-.circles { 
-  position: relative;
-  margin: 70px auto 0 auto;
-  width: 600px;
-
-  background-color: #0b0f11;
-  text-align: center;
-}
-
-.circles .text-wrapper {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 600px;
-
-  text-align: center;
-}
-
-.circles h2 {
-  font-family: 'Tangerine', cursive;
-  font-weight: normal;
-  font-size: 45px;
-
-  padding: 16px 0 0 0;
-}
-
-.listing { 
-  margin: 0 auto 0 auto;
-  width: 600px;
-
-  background-color: #fb0f11;
-  text-align: center;
-}
-
-.listing ul {
-  margin: 0 auto 0 auto;
-  text-align: center;
-  background-color: #0b0f11;
-  list-style-type: none;
-  padding: 0 0 0 0;
-  width: 600px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.listing ul a {
-  font-weight: 700;
 }
 
 .footer {
