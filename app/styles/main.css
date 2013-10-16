@@ -109,21 +109,21 @@ a:hover {
 }
 
 .listing { 
+  position: absolute;
+  top: 0px;
+  left: 0px;
   margin: 0 auto 0 auto;
-  width: 600px;
-  display: none;
+  width: 300px;
+  visibility: hidden;
 
-  background-color: #fb0f11;
   text-align: center;
 }
 
 .listing ul {
   margin: 0 auto 0 auto;
   text-align: center;
-  background-color: #0b0f11;
   list-style-type: none;
   padding: 0 0 0 0;
-  width: 600px;
 
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
@@ -134,10 +134,13 @@ a:hover {
   font-weight: 700;
 }
 
+.listing ul a:hover {
+  font-weight: normal;
+}
+
 .social {
   margin: 0 auto 0 auto;
   width: 600px;
-  background-color: #0b0f11;
 
   font-family: 'entypo-social'; 
   text-align: center;
@@ -160,20 +163,28 @@ a:hover {
   color: #ff6600;
 }
 
-.navigation {
+.contact {
   margin: 0 auto 0 auto;
   width: 600px;
   background-color: #0b0f11;
   text-align: center;
 }
 
-.navigation p {
+.contact p {
   margin: 0 0 0 0;
   padding: 2px 0 10px 0;
 
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 25px;
+}
+
+.contact p a {
+  font-weight: 600;
+}
+
+.contact p a:hover {
+  font-weight: 600;
 }
 
 .info {
