@@ -304,6 +304,12 @@ module.exports = function (grunt) {
                     cwd: '<%= yeoman.app %>',
                     src: 'support/*.html',
                     dest: '<%= yeoman.dist %>'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= yeoman.app %>',
+                    src: 'starkid/*.html',
+                    dest: '<%= yeoman.dist %>'
                 }]
             }
         },
@@ -333,7 +339,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
-                        'styles/support/{,*/}*.*'
+                        'styles/{,*/}*.css'
                     ]
                 }]
             },
