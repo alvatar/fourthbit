@@ -1,3 +1,5 @@
+/* Used by index.html */
+
 @import url(/styles/normalize.min.css);
 
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,600,700|Tangerine);
@@ -75,7 +77,7 @@ a:hover {
 
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .slogan h1 > a {

@@ -1,0 +1,190 @@
+@import url(/styles/normalize.min.css);
+@import url(/styles/layout.css);
+@import url(/styles/skeleton.css);
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:600,700);
+
+@font-face {
+  font-family: 'entypo-social';
+  src: url('/styles/fonts/entypo-social.eot');
+  src: url('/styles/fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
+  url('/styles/fonts/entypo-social.woff') format('woff'),
+  url('/styles/fonts/entypo-social.ttf') format('truetype'),
+  url('/styles/fonts/entypo-social.svg#entypo-social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {margin:0; padding: 0; font-family: 'Josefin Sans', 'Open Sans', Arial, sans-serif;}
+body {background: #0B0F11; color: #fff;}
+
+/*
+* Paragraf
+*/
+p {font-size: 18px; font-weight: 600; color: #ccc; line-height: 22px;}
+
+/*
+* Link
+*/
+a, a:visited {text-decoration: none; color: #fff;}
+
+/*
+* Headings
+*/
+h1 {font-size: 1.8em; line-height: 1.23em; font-weight: 700;}
+h2 {font-size: 26px; font-weight: 700;}
+h3 {font-size: 28px; font-family: 'Josefin Sans', Georgia, serif; padding: 20px 0; font-weight: 700;}
+h4 {font-size: 20px; font-weight: 700;}
+h5 {font-size: 18px; padding-bottom: 10px; font-weight: 700;}
+h6 {font-size: 16px; padding-bottom: 10px; font-weight: bold; font-weight: 700;}
+
+h5 b {font-weight: bold;}
+
+ul {font-size: 18px; margin: 7px 0; padding-left: 10px;}
+ul li {margin-bottom: 5px;}
+
+/*
+* divs random
+*/
+.container .clear, body .clear {width: 100%; float: left; clear: both; margin: 20px 0;}
+.one-third {text-align: center;}
+
+/*
+* Header 
+*/
+header {width: 100%; height: 300px; float: left; clear: both; margin: 0; padding: 0; position: relative; z-index: 1;} 
+header nav {width: 100%; float: left; margin: 0; padding: 25px 0 20px; background: #fff; border-top: 2px solid #FF6A00; position: relative; z-index: 1;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+}
+header .slogan {text-align: center; padding: 80px 0;}
+header p {color: #fff;}
+header h1, header h2, header h4 {width: 100%; float: left; clear: both;  text-align: center; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.2); font-weight: 700;}
+header h1 {font-size: 3em; margin-bottom: 10px;}
+header h2 {font-size: 20px;}
+header h4 {font-weight: 700; margin-top: 10px; margin-bottom: 10px;}
+
+/*
+* Logo
+*/
+.logo a {color: #444; text-decoration: none; line-height: 20px;}
+.logo a:hover {color: #FF6A00;}
+
+/*
+* Orange
+*/
+.orange {width: 100%; float: left; clear: both; background: #ff6a00; margin: 0px 0; padding: 45px 0; color: #fff; text-align: center; position: relative;z-index: 1;}
+.orange h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
+.orange p {width: 600px; margin: 0 auto 30px; color: #fff; text-align: center;}
+.orange a.dalej {
+  display: block;
+  width: 185px;
+  background: #df4a00;
+  color: #fff;
+  margin: 0 auto 18px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+.orange a.dalej:hover {background: #fff; color: #ff6a00;}
+
+/*
+* Gray
+*/
+.gray {width: 100%; float: left; clear: both; background: #f6f6f6; margin: 0px 0; padding: 45px 0; position:relative; z-index:1;}
+
+/*
+* BUTTONS
+*/
+.button {float: left; color: #fff; text-transform: uppercase; text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+
+	-webkit-transition: background .12s ease-in-out;
+    -moz-transition: background .12s ease-in-out;
+    -ms-transition: background .12s ease-in-out;
+    -o-transition: background .12s ease-in-out;
+    transition: background .12s ease-in-out;
+}
+
+.medium {font-size: 12px; margin: 5px 0; padding: 9px 14px 8px;}
+
+/*
+* Footer
+*/
+footer {width: 100%; float: left; margin: 0px 0 0; padding: 30px 0; background: #333;}
+footer h5 {color: #ccc; padding: 0 0 0 0; margin: 0 0 0 0}
+footer p {color: #ccc; line-height: 15px; font-size: 16px; margin-bottom: 7px;}
+footer a {color: #fff;}
+footer a:hover {color: #ff6a00;}
+footer .navigation a {color: #ff6a00;}
+footer .navigation a:hover {color: #fff;}
+
+footer .social a { color: #fff;
+  float: left;
+  margin-right: 10px;
+  font-family: 'entypo-social'; 
+  font-weight: normal;
+  font-size: 40px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+footer .social a img {width: 35px; opacity: 0.4;}
+footer .social a:hover {
+  opacity: 1;
+  color: #ff6600;
+}
+
+
+/* -------------------
+*  RESPOSIVE ELEMENTS
+*  ------------------- */
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+	header h2 {display: none;}
+	header .slogan {padding-top: 40px;}
+
+	nav .container .logo {margin-bottom: 20px; text-align: center;}
+
+	.orange p {width: 400px;}
+
+	form, label, input  {width: 400px;}
+	input[type="submit"] {width: 402px;}
+	textarea {width: 380px;}
+
+	.container .one-third.column, .container .eight.columns, .container .four.columns {margin-bottom: 40px;}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	header {height: 310px;}
+	header h2, header .six.columns {display: none;}
+	header .slogan {padding: 30px 0;}
+
+
+	nav .container .logo {margin-bottom: 20px; text-align: center;}
+
+	.orange p {width: 200px;}
+
+
+
+	form, label, input  {width: 300px;}
+	input[type="submit"] {width: 302px;}
+	textarea {width: 280px;}
+
+	.container .one-third.column, .container .eight.columns, .container .four.columns {margin-bottom: 40px;}
+
+
+}
+

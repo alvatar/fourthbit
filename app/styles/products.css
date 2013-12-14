@@ -1,3 +1,7 @@
+@import url(/styles/normalize.min.css);
+@import url(/styles/layout.css);
+@import url(/styles/skeleton.css);
+
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:600,700);
 
 @font-face {
@@ -17,18 +21,18 @@ body {background: #0B0F11; color: #fff;}
 /*
 * Paragraf
 */
-p {font-size: 17px; font-weight: 600; color: #ccc; line-height: 22px;}
+p {font-size: 18px; font-weight: 600; color: #ccc; line-height: 22px;}
 
 /*
 * Link
 */
-a, a:visited {text-decoration: none; color: #fff;}
+a, a:link, a:visited {text-decoration: none; color: #fff;}
 
 /*
 * Headings
 */
-h1 {font-size: 1.8em; line-height: 1.23em; font-weight: 700;}
-h2 {font-size: 26px; font-weight: 700;}
+h1 {font-size: 32px; line-height: 32px; font-weight: 700;}
+h2 {font-size: 24px; font-weight: 700;}
 h3 {font-size: 28px; font-family: 'Josefin Sans', Georgia, serif; padding: 20px 0; font-weight: 700;}
 h4 {font-size: 20px; font-weight: 700;}
 h5 {font-size: 18px; padding-bottom: 10px; font-weight: 700;}
@@ -36,36 +40,28 @@ h6 {font-size: 16px; padding-bottom: 10px; font-weight: bold; font-weight: 700;}
 
 h5 b {font-weight: bold;}
 
-ul {font-size: 18px; margin: 7px 0; padding-left: 10px;}
-ul li {margin-bottom: 5px;}
-
 /*
-* divs random
+* Clear
 */
 .container .clear, body .clear {width: 100%; float: left; clear: both; margin: 20px 0;}
-.one-third {text-align: center;}
 
 /*
-* Header 
+* Video
 */
-header {width: 100%; height: 300px; float: left; clear: both; margin: 0; padding: 0; background: url(../images/misc/banner.jpg) no-repeat center -1px fixed; position: relative; z-index: 1;} 
-header nav {width: 100%; float: left; margin: 0; padding: 25px 0 20px; background: #fff; border-top: 2px solid #FF6A00; position: relative; z-index: 1;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
-	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+.video-title {
+  margin-top: 90px;
+  text-align: center;
 }
-header .slogan {text-align: center; padding: 80px 0;}
-header p {color: #fff;}
-header h1, header h2, header h4 {width: 100%; float: left; clear: both;  text-align: center; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.2); font-weight: 700;}
-header h1 {font-size: 3em; margin-bottom: 10px;}
-header h2 {font-size: 20px;}
-header h4 {font-weight: 700; margin-top: 10px; margin-bottom: 10px;}
+.video {
+  clear: both;
+  width: 600px;
+  margin: 60px auto 30px auto;
+  text-align: center;
+}
 
-/*
-* Logo
-*/
-.logo a {color: #444; text-decoration: none; line-height: 20px;}
-.logo a:hover {color: #FF6A00;}
+.app-buttons {
+  text-align: center;
+}
 
 /*
 * Orange
@@ -73,7 +69,16 @@ header h4 {font-weight: 700; margin-top: 10px; margin-bottom: 10px;}
 .orange {width: 100%; float: left; clear: both; background: #ff6a00; margin: 0px 0; padding: 45px 0; color: #fff; text-align: center; position: relative;z-index: 1;}
 .orange h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
 .orange p {width: 600px; margin: 0 auto 30px; color: #fff; text-align: center;}
-.orange a.dalej {display: block; width: 185px; background: #df4a00; color: #fff; margin: 0 auto 18px; padding: 10px 20px; font-size: 12px; text-transform: uppercase;
+.orange a.dalej {
+  display: block;
+  width: 185px;
+  background: #df4a00;
+  color: #fff;
+  margin: 0 auto 18px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
 	border-radius: 30px;
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
@@ -106,10 +111,12 @@ header h4 {font-weight: 700; margin-top: 10px; margin-bottom: 10px;}
 * Footer
 */
 footer {width: 100%; float: left; margin: 0px 0 0; padding: 30px 0; background: #333;}
-footer h5 {color: #ccc;}
+footer h5 {color: #ccc; padding: 0 0 0 0; margin: 0 0 0 0}
 footer p {color: #ccc; line-height: 15px; font-size: 16px; margin-bottom: 7px;}
-footer a {color: #aaa;}
+footer a {color: #fff;}
 footer a:hover {color: #ff6a00;}
+footer .navigation a {color: #ff6a00;}
+footer .navigation a:hover {color: #fff;}
 
 footer .social a { color: #fff;
   float: left;
@@ -172,12 +179,4 @@ footer .social a:hover {
 
 
 }
-
-
-
-
-
-
-
-
 

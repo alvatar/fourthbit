@@ -49,6 +49,8 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.app %>/*.html',
+                    '<%= yeoman.app %>/support/*.html',
+                    '<%= yeoman.app %>/starkid/*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -267,9 +269,13 @@ module.exports = function (grunt) {
             //
             // dist: {
             //     files: {
-            //         '<%= yeoman.dist %>/styles/main.css': [
-            //             '.tmp/styles/{,*/}*.css',
-            //             '<%= yeoman.app %>/styles/{,*/}*.css'
+            //         // '<%= yeoman.dist %>/styles/support/main.css': [
+            //             // '.tmp/styles/support/{,*/}*.css',
+            //             // '<%= yeoman.app %>/styles/support/{,*/}*.css'
+            //         // ],
+            //         '<%= yeoman.dist %>/styles/support/main.css': [
+            //             '.tmp/styles/support/{,*/}main*.css',
+            //             '<%= yeoman.app %>/styles/support/{,*/}main*.css'
             //         ]
             //     }
             // }
@@ -291,6 +297,12 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= yeoman.app %>',
                     src: '*.html',
+                    dest: '<%= yeoman.dist %>'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= yeoman.app %>',
+                    src: 'support/*.html',
                     dest: '<%= yeoman.dist %>'
                 }]
             }
@@ -320,7 +332,8 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                        'styles/support/{,*/}*.*'
                     ]
                 }]
             },
