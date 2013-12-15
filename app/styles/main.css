@@ -51,14 +51,11 @@ a:hover {
 
 .fourthbit-logo {
   display: block;
-  margin: 200px auto 0 auto;
   text-align: center;
 }
 
-@media only screen and (max-device-height : 680px) {
-  .fourthbit-logo {
-    padding: 22px 0 0 0;
-  }
+.fourthbit-logo img {
+  margin: 200px auto 0 auto;
 }
 
 .slogan {
@@ -98,8 +95,8 @@ a:hover {
 }
 
 .middle-box {
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
 }
 
 .listing { 
