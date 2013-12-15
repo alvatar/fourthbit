@@ -17,40 +17,20 @@ define([], function () {
     });
 
     // Navigation
-    var isActive = false;
-    $('.circles').mouseover( function() {
-        if(!isActive) {
-            $('img, > .text-wrapper', this).stop().animate({'opacity': '0.3'}, 300);
-        }
-    }).mouseout( function() {
-        if(!isActive) {
-            $('img, > .text-wrapper', this).stop().animate({'opacity': '1.0'}, 300);
-        }
-    }).click( function() {
-        $(this).addClass('circles-selected');
-        $('.circles > img, .circles > .text-wrapper').not(this).animate({'opacity': '0.5'}, 400);
-        $('img, > .text-wrapper', this).stop().animate({'opacity': '0.08'}, 400);
-        $('.listing').removeClass('selected');
-        $('.listing', this).addClass('selected');
-        $('.listing').not('.selected').animate({'opacity': '0.0', 'top': '0px'}, 200).css('visibility', 'hidden');
-        $('.listing', this).css({'visibility': 'visible', 'opacity': '0.0'}).animate({'opacity': '1.0', 'top': '40px'}, 400);
-        isActive = true;
+    $('.box').click( function() {
+      $('.listing', this).stop().css('visibility','visible').hide().fadeIn()
+      $('h1').stop().animate({ opacity: 0.3 })
+      $('h1', this).stop().animate({ opacity: 0 })
     });
     $(document).mouseup(function (e) {
-        var container = $('.circles');
+        var container = $('.box');
         // if the target of the click isn't the container...
         // ... nor a descendant of the container
         if (!container.is(e.target) && container.has(e.target).length === 0) {
-            $('.listing').animate({'opacity': '0.0', 'top': '0px'}, {
-                duration: 200,
-                complete: function() {
-                    $(this).css({'top': '0px', 'visibility': 'hidden'});
-                }
-            });
-            $('.circles > img, .circles > .text-wrapper').animate({'opacity': '1.0', 'margin-top': '0px'}, 1000);
-            isActive = false;
+            $('.listing').stop().fadeOut().css('visibility','hidden')
+            $('.box > h1', this).stop().animate({ opacity: 1 })
         }
     });
 
-    return 'Fourthbit v0.3';
+    return 'Fourthbit v0.4';
 });
