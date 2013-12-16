@@ -121,6 +121,10 @@ a:hover {
   font-size: 18px;
 }
 
+.listing ul li {
+  height: 28px;
+}
+
 .listing ul a {
   font-weight: 600;
 }
