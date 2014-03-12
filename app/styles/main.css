@@ -92,6 +92,27 @@ a:hover {
   color: #ff6600;
 }
 
+.navigation h1 > .circle {
+  border-radius: 50%;
+	width: 40px;
+	height: 40px;
+  background-color: #fff;
+  margin: 32px auto 0 auto;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.navigation h1 > .circle:hover {
+  background-color: #ff6600;
+  ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+
 .box {
   position: relative;
 }
