@@ -108,9 +108,9 @@ a:hover {
 
 .navigation h1 > .circle:hover {
   background-color: #ff6600;
-  ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5);
+  ms-transform: scale(3.33); /* IE 9 */
+  -webkit-transform: scale(3.33); /* Chrome, Safari, Opera */
+  transform: scale(3.33);
 }
 
 .box {
