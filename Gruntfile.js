@@ -316,12 +316,6 @@ module.exports = function (grunt) {
                 {
                     expand: true,
                     cwd: '<%= yeoman.app %>',
-                    src: 'childrens-day-map/*.html',
-                    dest: '<%= yeoman.dist %>'
-                },
-                {
-                    expand: true,
-                    cwd: '<%= yeoman.app %>',
                     src: 'starkid/*.html',
                     dest: '<%= yeoman.dist %>'
                 }]
@@ -353,7 +347,8 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
-                        'styles/{,*/}*.css'
+                        'styles/{,*/}*.css',
+                        'childrens-day-map/**/*'
                     ]
                 }]
             },
