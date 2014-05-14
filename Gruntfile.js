@@ -51,6 +51,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/*.html',
                     '<%= yeoman.app %>/support/*.html',
                     '<%= yeoman.app %>/nitrotank/*.html',
+                    '<%= yeoman.app %>/childrens-day-map/*.html',
                     '<%= yeoman.app %>/starkid/*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
@@ -310,6 +311,12 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= yeoman.app %>',
                     src: 'nitrotank/*.html',
+                    dest: '<%= yeoman.dist %>'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= yeoman.app %>',
+                    src: 'childrens-day-map/*.html',
                     dest: '<%= yeoman.dist %>'
                 },
                 {
