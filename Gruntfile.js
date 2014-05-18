@@ -35,10 +35,10 @@ module.exports = function (grunt) {
                 files: ['test/spec/{,*/}*.coffee'],
                 tasks: ['coffee:test']
             },
-            compass: {
-                files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-                tasks: ['compass:server', 'autoprefixer']
-            },
+            //compass: {
+                //files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+                //tasks: ['compass:server', 'autoprefixer']
+            //,
             styles: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
                 tasks: ['copy:styles', 'autoprefixer']
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
         open: {
             server: {
                 path: 'http://localhost:<%= connect.options.port %>',
-                app: 'chromium'
+                app: 'Google Chrome'
             }
         },
         clean: {
@@ -155,6 +155,7 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        /*
         compass: {
             options: {
                 sassDir: '<%= yeoman.app %>/styles',
@@ -180,6 +181,7 @@ module.exports = function (grunt) {
                 }
             }
         },
+        */
         autoprefixer: {
             options: {
                 browsers: ['last 1 version']
@@ -375,14 +377,12 @@ module.exports = function (grunt) {
             }
         },
         modernizr: {
-            devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-            outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
-            files: [
-                '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                '<%= yeoman.dist %>/styles/{,*/}*.css',
-                '!<%= yeoman.dist %>/scripts/vendor/*'
-            ],
-            uglify: true
+            dist: {
+                devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
+                outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
+                files: { src: ['<%= yeoman.dist %>/scripts/{,*/}*.js','<%= yeoman.dist %>/styles/{,*/}*.css','!<%= yeoman.dist %>/scripts/vendor/*' ] },
+                uglify: true
+            }
         },
         concurrent: {
             server: [
@@ -396,7 +396,7 @@ module.exports = function (grunt) {
             ],
             dist: [
                 'coffee',
-                'compass',
+                //'compass',
                 'copy:styles',
                 'imagemin',
                 'svgmin',
@@ -453,7 +453,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'jshint',
-        'test',
+        //'test',
         'build'
     ]);
 };
