@@ -4,7 +4,7 @@
 @import url(/styles/layout.css);
 @import url(/styles/skeleton.css);
 
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,600);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,500);
 @font-face {
   font-family: 'entypo-social';
   src: url('fonts/entypo-social.eot');
@@ -77,7 +77,7 @@ a:hover {
 
 .navigation h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 30px;
   text-align: center;
 
@@ -144,7 +144,7 @@ a:hover {
   padding: 0 0 0 0;
 
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -153,7 +153,7 @@ a:hover {
 }
 
 .listing ul a {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .listing ul a:hover {
@@ -200,11 +200,11 @@ a:hover {
 }
 
 .contact p a {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .contact p a:hover {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info {
@@ -218,7 +218,7 @@ a:hover {
   padding: 2px 0 10px 0;
 
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   color: #ff6600;
 }

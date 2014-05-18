@@ -2,7 +2,7 @@
 @import url(/styles/layout.css);
 @import url(/styles/skeleton.css);
 
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:600,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,500);
 
 @font-face {
   font-family: 'entypo-social';
@@ -21,7 +21,7 @@ body {background: #0B0F11; color: #fff;}
 /*
 * Paragraf
 */
-p {font-size: 18px; font-weight: 600; color: #ccc; line-height: 22px;}
+p {font-size: 18px; font-weight: 300; color: #ccc; line-height: 22px;}
 
 /*
 * Link
@@ -31,12 +31,12 @@ a, a:visited {text-decoration: none; color: #fff;}
 /*
 * Headings
 */
-h1 {font-size: 1.8em; line-height: 1.23em; font-weight: 700;}
-h2 {font-size: 26px; font-weight: 700;}
-h3 {font-size: 28px; font-family: 'Josefin Sans', Georgia, serif; padding: 20px 0; font-weight: 700;}
-h4 {font-size: 20px; font-weight: 700;}
-h5 {font-size: 18px; padding-bottom: 10px; font-weight: 700;}
-h6 {font-size: 16px; padding-bottom: 10px; font-weight: bold; font-weight: 700;}
+h1 {font-size: 1.8em; line-height: 1.23em; font-weight: 500;}
+h2 {font-size: 26px; font-weight: 500;}
+h3 {font-size: 28px; font-family: 'Josefin Sans', Georgia, serif; padding: 20px 0; font-weight: 500;}
+h4 {font-size: 20px; font-weight: 500;}
+h5 {font-size: 18px; padding-bottom: 10px; font-weight: 500;}
+h6 {font-size: 16px; padding-bottom: 10px; font-weight: bold; font-weight: 500;}
 
 h5 b {font-weight: bold;}
 
@@ -60,10 +60,10 @@ header nav {width: 100%; float: left; margin: 0; padding: 25px 0 20px; backgroun
 }
 header .slogan {text-align: center; padding: 80px 0;}
 header p {color: #fff;}
-header h1, header h2, header h4 {width: 100%; float: left; clear: both;  text-align: center; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.2); font-weight: 700;}
+header h1, header h2, header h4 {width: 100%; float: left; clear: both;  text-align: center; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.2); font-weight: 500;}
 header h1 {font-size: 3em; margin-bottom: 10px;}
 header h2 {font-size: 20px;}
-header h4 {font-weight: 700; margin-top: 10px; margin-bottom: 10px;}
+header h4 {font-weight: 500; margin-top: 10px; margin-bottom: 10px;}
 
 /*
 * Logo
@@ -85,7 +85,7 @@ header h4 {font-weight: 700; margin-top: 10px; margin-bottom: 10px;}
   margin: 0 auto 18px;
   padding: 10px 20px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 	border-radius: 30px;
 	-moz-border-radius: 30px;
