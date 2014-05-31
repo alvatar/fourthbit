@@ -121,9 +121,18 @@ a:hover {
   cursor: pointer; cursor: hand; 
 }
 
+.left-box {
+  z-index:2;
+}
+
 .middle-box {
   border-left: 1px solid #888;
   border-right: 1px solid #888;
+  z-index:1;
+}
+
+.right-box {
+  z-index:0;
 }
 
 .listing { 
