@@ -51,7 +51,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/*.html',
                     '<%= yeoman.app %>/support/*.html',
                     '<%= yeoman.app %>/nitrotank/*.html',
-                    '<%= yeoman.app %>/childrens-day-map/*.html',
+                    '<%= yeoman.app %>/day-map/*.html',
                     '<%= yeoman.app %>/starkid/*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
         open: {
             server: {
                 path: 'http://localhost:<%= connect.options.port %>',
-                app: 'Google Chrome'
+                app: 'Firefox'
             }
         },
         clean: {
@@ -350,7 +350,7 @@ module.exports = function (grunt) {
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
                         'styles/{,*/}*.css',
-                        'childrens-day-map/**/*'
+                        'day-map/**/*'
                     ]
                 }]
             },

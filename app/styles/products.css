@@ -59,6 +59,28 @@ h5 b {font-weight: bold;}
   text-align: center;
 }
 
+.important-notices {
+  text-align: center;
+}
+
+.important-notices h1 {
+  margin-top: 50px;
+  font-size: 52px;
+}
+
+.important-notices h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.important-notices a {
+  color: #ff6a00;
+}
+
+.important-notices a:hover {
+  color: #ccc;
+}
+
 .app-buttons {
   text-align: center;
 }
