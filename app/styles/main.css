@@ -47,7 +47,15 @@ a:hover {
   color: #ff6600;
 }
 
+.replaced-svg:hover path {
+  fill: #ff6600 !important;
+}
 
+.replaced-svg {
+  height: 16px;
+  width: 16px;
+  display: inline;
+}
 
 .fourthbit-logo {
   display: block;
