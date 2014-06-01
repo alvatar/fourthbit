@@ -58,7 +58,10 @@ h5 b {font-weight: bold;}
   text-align: center;
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 767px) {
+  .video {
+    max-width: 420px;
+  }
   .video iframe {
     width:100%;
   }
