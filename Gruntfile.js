@@ -256,6 +256,12 @@ module.exports = function (grunt) {
             }
         },
         svgmin: {
+            options: {                                      // Configuration that will be passed directly to SVGO
+                plugins: [
+                    { removeViewBox: false },
+                    { removeUselessStrokeAndFill: false }
+                ]
+            },
             dist: {
                 files: [{
                     expand: true,
