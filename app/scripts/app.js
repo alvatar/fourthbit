@@ -16,9 +16,18 @@ define([], function () {
         $('html,body').animate({scrollTop:dest}, 1000,'swing')
     })
 
-    var currentActive
+    var currentActive = null
+    
     // Navigation
-    $('.box').click( function() {
+    $('.box').mouseenter( function() {
+        if( currentActive ) {
+            $('.listing').stop()
+                         .animate( {opacity: 0, top: 0} )
+                         .css('visibility','hidden')
+            $('.box > h1', currentActive).stop()
+                                .animate({ opacity: 1 })
+            currentActive = null
+        }
         $('.listing', this).stop()
                            .css({visibility: 'visible', opacity: 0})
                            .animate({opacity: 1, top: 40})
@@ -26,6 +35,7 @@ define([], function () {
         $('h1', this).stop().animate({ opacity: 0 })
         currentActive = $(this)
     })
+
     $(document).mouseup(function (e) {
         var container = currentActive //$('.box')
         // if the target of the click isn't the container...
@@ -38,7 +48,9 @@ define([], function () {
                                 .animate({ opacity: 1 })
         }
     })
+    
 
+    
     /*
      * Replace all SVG images with inline SVG
      */
@@ -71,5 +83,5 @@ define([], function () {
 
     });
 
-    return 'Fourthbit v0.5'
+    return 'Fourthbit v0.6'
 })
