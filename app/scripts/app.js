@@ -24,19 +24,18 @@ define([], function () {
             $('.listing').stop()
                          .animate( {opacity: 0, top: 0} )
                          .css('visibility','hidden')
-            $('.box > h1', currentActive).stop()
-                                .animate({ opacity: 1 })
+            $('.box > h1', currentActive).stop().animate({ opacity: 1 })
             currentActive = null
         }
         $('.listing', this).stop()
                            .css({visibility: 'visible', opacity: 0})
                            .animate({opacity: 1, top: 40})
-        $('h1').stop().animate({ opacity: 0.3 })
-        $('h1', this).stop().animate({ opacity: 0 })
+        $('h1').stop().animate({ opacity: 0.4 })
+        $('h1', this).stop().animate({ opacity: 0.25 })
         currentActive = $(this)
     })
 
-    $(document).mouseup(function (e) {
+    $(document).mouseover(function (e) {
         var container = currentActive //$('.box')
         // if the target of the click isn't the container...
         // ... nor a descendant of the container
@@ -83,5 +82,5 @@ define([], function () {
 
     });
 
-    return 'Fourthbit v0.6'
+    return 'Fourthbit v0.6.1'
 })
