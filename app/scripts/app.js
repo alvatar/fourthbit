@@ -82,5 +82,5 @@ define([], function () {
 
     });
 
-    return 'Fourthbit v0.6.1'
+    return 'Fourthbit v0.7'
 })
